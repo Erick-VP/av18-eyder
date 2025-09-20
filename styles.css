@@ -1,3 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: rgb(255, 255, 255);
+}
+
+main{
+    font-family: "Montserrat", Sans-serif;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+header {
+    color: white;
+    background-color: rgb(21, 103, 179);
+    height: 160px;
+    display: flex;
+    font-size: 20px;
+    font-family: "Barlow", Sans-serif;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+a { 
+    padding: 10px;
+    line-height: 150%;
+    text-decoration: none;
+    font-family: "Barlow", Sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+a:hover {
+    color: rgb(207, 174, 66);
+}
+
+
+section {
+    margin-top: 50px;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sobre .about {
+  display: flex;
+  flex-direction: row;
+  align-items:start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#sobre .about p {
+  flex: 1;
+  max-width: 800px;
+}
+
+#sobre .about figure {
+  flex: 0 auto;
+  max-width: 600px;
+}
+
+#sobre img {
+  max-width: 600px;
+  height: auto;
+}
+
+.grid-inv {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 400px));
+    justify-content: center;
+    justify-items: center;
+    align-content: space-around;
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.grid-inv-item {
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 80%);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    padding: 20px;
+    text-align: center;
+    margin: 30px;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    margin: 10px;
+    line-height: 150%;
+    font-size: large;
+}
+
+.detail01 {
+    font-size: 15px;
+    text-align: center;
+    color: rgb(92, 92, 92);
+}
+
 #inventor{
 display: flex;
 }
