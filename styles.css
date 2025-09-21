@@ -27,6 +27,10 @@ header {
     flex-wrap: wrap;
 }
 
+#logo {
+    margin-right: 50px;
+}
+
 nav {
     flex-wrap: wrap;
     padding: 30px;
