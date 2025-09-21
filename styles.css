@@ -5,7 +5,7 @@
 }
 
 body {
-    height: 100vh;
+    height: 100dvh;
     background: rgb(255, 255, 255);
 }
 
@@ -20,10 +20,11 @@ header {
     background-color: rgb(21, 103, 179);
     height: 160px;
     display: flex;
-    font-size: 20px;
+    font-size: 10px;
     font-family: "Barlow", Sans-serif;
     align-items: center;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 nav {
@@ -31,11 +32,12 @@ nav {
     padding: 30px;
     justify-content: flex-end;
     margin-left: auto;
+    font-size: 1.2em;
 }
 
 a { 
-    padding: 10px;
-    line-height: 150%;
+    padding: 0.5em;
+    line-height: 200%;
     text-decoration: none;
     font-family: "Barlow", Sans-serif;
     font-weight: bold;
@@ -48,7 +50,30 @@ a:hover {
 
 
 section {
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: calc(4vw);
+}
+
+h2 {
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+h3 {
+    font-size: 12px;
+    text-align: center;
+}
+
+p {
+    margin: 5px;
+    line-height: 150%;
+    font-size: 10px;
 }
 
 #sobre {
@@ -59,7 +84,7 @@ section {
 
 #sobre .about {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items:start;
   gap: 20px;
   flex-wrap: wrap;
@@ -67,45 +92,160 @@ section {
 
 #sobre .about p {
   flex: 1;
-  max-width: 800px;
+  max-width: 400px;
 }
 
 #sobre .about figure {
   flex: 0 auto;
-  max-width: 600px;
+  max-width: 340px;
 }
 
 #sobre img {
-  max-width: 600px;
+  max-width: 340px;
   height: auto;
 }
 
 .grid-inv {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(80px, 400px));
+    grid-template-columns: repeat(auto-fill, minmax(80px, 180px));
     justify-content: center;
     justify-items: center;
     align-content: space-around;
     grid-gap: 10px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .grid-inv-item {
     background-color: hsl(0, 0%, 95%);
     border: 2px solid hsl(0, 0%, 80%);
     border-radius: 5px;
+    padding: 8px;
+}
+
+.detail01 {
+    font-size: 09px;
+    text-align: center;
+    color: rgb(92, 92, 92);
+}
+
+#inventor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    overflow-wrap: break-word;
+}
+
+#inventor img {
+    max-width: 150px;
+    height: auto;
+    padding: 10px;
+}
+
+#inventor div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 95%);
+    max-width: 25vh;
     padding: 20px;
+    border-radius: 20px;
+}
+
+#formulario {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+form {
+    padding: 20px 0px;
+    font-size: 1.2em;
+    align-content: center;
+}
+
+form * {
+    margin: 5px;
+}
+
+.form-label {
+    align-content: center;
+}
+
+.form-item {
+    margin-bottom: 10px;
+}
+
+.form-input {
+    width: 100%;
+    max-width: 100%;
+    height: 3em;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 5px;
+    background-color: rgb(236, 236, 236);
+    padding: 0.8em;
+}
+
+.form-text {
+    width: 100%;
+    max-width: 100%;
+    height: 3em;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 5px;
+    background-color: rgb(236, 236, 236);
+    padding: 0.8em;
+}
+
+.form-select {
+    height: 3em;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 5px;
+    background-color: rgb(236, 236, 236);
+    padding: 0.8em;
+}
+
+#topics {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    color: white;
+    background-color: rgb(21, 103, 179);
+    height: 160px;
+    display: flex;
+    font-size: 20px;
+    font-family: "Barlow", Sans-serif;
+    align-items: center;
+    padding: 20px;
+}
+
+
+@media (min-width: 800px) {
+
+header {
+    font-size: 20px;
+    white-space: normal;
+    flex-wrap: nowrap;
+}
+
+section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 32px;
 }
 
 h2 {
     font-size: 28px;
     padding: 20px;
-    text-align: center;
     margin: 30px;
 }
 
 h3 {
-    text-align: center;
+    font-size: 22px;
 }
 
 p {
@@ -114,26 +254,39 @@ p {
     font-size: large;
 }
 
+#sobre .about {
+    flex-direction: row;
+}
+
+#sobre .about p {
+    max-width: 800px;
+}
+
+#sobre img {
+    max-width: 50vh;
+    height: auto;
+}
+
+.grid-inv {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 300px));
+    padding: 20px;
+}
+
 .detail01 {
     font-size: 15px;
-    text-align: center;
-    color: rgb(92, 92, 92);
 }
 
-#inventor{
-display: flex;
-}
-#thomas{
-    margin: 50px;
+.grid-inv-item {
+    padding: 20px;
 }
 
-#james{
-    margin: 50px;
+#inventor img {
+    max-width: 400px;
+    height: auto;
 }
 
-#alexander{
-    margin: 50px;
+#inventor div {
+    max-width: 38vh;
 }
-#johannes{
-    margin: 50px;
+
 }
