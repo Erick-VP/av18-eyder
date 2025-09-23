@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="800px"
+   height="800px"
+   viewBox="0 -0.5 25 25"
+   fill="none"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="instagram.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs14" />
+  <sodipodi:namedview
+     id="namedview12"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.523125"
+     inkscape:cx="344.08602"
+     inkscape:cy="399.5221"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg10" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="M 16.748699,2.0863684 H 8.2513007 c -3.1286571,0 -5.6649323,2.5362752 -5.6649323,5.6649323 v 8.4973983 c 0,3.128601 2.5362752,5.664933 5.6649323,5.664933 h 8.4973983 c 3.128601,0 5.664933,-2.536332 5.664933,-5.664933 V 7.7513007 c 0,-3.1286571 -2.536332,-5.6649323 -5.664933,-5.6649323 z"
+     stroke="#000000"
+     stroke-width="2.12435"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="path2" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="m 12.5,16.248699 c -2.346557,0 -4.2486993,-1.902142 -4.2486993,-4.248699 0,-2.3465566 1.9021423,-4.2486993 4.2486993,-4.2486993 2.346557,0 4.248699,1.9021427 4.248699,4.2486993 0,1.126755 -0.447671,2.207483 -1.244444,3.004255 -0.796772,0.796773 -1.8775,1.244444 -3.004255,1.244444 z"
+     stroke="#000000"
+     stroke-width="2.12435"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="path4" />
+  <rect
+     x="-7.7513008"
+     y="16.748699"
+     width="2.8324661"
+     height="2.8324661"
+     rx="1.4162331"
+     transform="rotate(-90)"
+     fill="#000000"
+     id="rect6"
+     style="stroke-width:1.41623" />
+  <rect
+     x="-7.0431843"
+     y="17.456816"
+     width="1.4162331"
+     height="1.4162331"
+     rx="0.70811653"
+     transform="rotate(-90)"
+     stroke="#000000"
+     stroke-linecap="round"
+     id="rect8"
+     style="stroke-width:1.41623" />
+</svg>

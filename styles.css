@@ -1,7 +1,19 @@
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.barlow-regular {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -11,73 +23,117 @@ body {
 
 main{
     font-family: "Montserrat", Sans-serif;
-    padding-left: 10%;
-    padding-right: 10%;
+
 }
 
 header {
     color: white;
-    background-color: rgb(21, 103, 179);
+    background-color: rgb(20, 89, 168);
     height: 160px;
     display: flex;
-    font-size: 10px;
+    font-size: 12px;
     font-family: "Barlow", Sans-serif;
+    justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 4%;
     flex-wrap: wrap;
 }
 
 #logo {
-    margin-right: 50px;
+    margin-right: 20px;
+    width: min(15vw, 150px);
+    height: auto;
 }
 
 nav {
     flex-wrap: wrap;
-    padding: 30px;
-    justify-content: flex-end;
-    margin-left: auto;
     font-size: 1.2em;
+    position: relative;
+    top: 20px
 }
 
-a { 
+nav a { 
     padding: 0.5em;
     line-height: 200%;
     text-decoration: none;
     font-family: "Barlow", Sans-serif;
     font-weight: bold;
-    color: white;
+    color: hsla(0, 0%, 100%, 50%);
 }
 
 a:hover {
-    color: rgb(207, 174, 66);
+    color: rgb(255, 255, 255);
 }
 
 
 section {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
+    padding-top: 10px;
+    padding-bottom: 60px;
+}   
 
 h1 {
     font-size: calc(4vw);
 }
 
 h2 {
-    font-size: 16px;
-    padding: 10px;
-    text-align: center;
+    color: rgb(209, 49, 89);
+    font-size: 20px;
+    padding: 20px;
     margin: 10px;
+    text-align: center;
 }
 
 h3 {
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
+    padding: 0.3em;
 }
 
 p {
     margin: 5px;
     line-height: 150%;
     font-size: 10px;
+}
+
+.padding-10 {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.padding-20 {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+button {
+  transition-duration: 0.4s;
+}
+
+.button01 {
+  background-color: rgb(7, 126, 33);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  text-align: center;
+  display: inline-block;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 14px;
+}
+.button01:hover {
+    background-color: rgb(45, 197, 103);
+}
+
+.button02 {
+  background-color: rgb(167, 167, 167);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  text-align: center;
+  display: inline-block;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 14px;
 }
 
 #sobre {
@@ -87,49 +143,60 @@ p {
 }
 
 #sobre .about {
-  display: flex;
-  flex-direction: column;
-  align-items:start;
-  gap: 20px;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 #sobre .about p {
-  flex: 1;
-  max-width: 400px;
+    flex: 0 auto;
+    max-width: 100%;
+    font-size: 16px;
 }
 
 #sobre .about figure {
-  flex: 0 auto;
-  max-width: 340px;
+    flex: 0 auto;
+    max-width: 80%;
 }
 
 #sobre img {
-  max-width: 340px;
-  height: auto;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+#sobre figcaption {
+    text-align: center;
+    padding: 5px;
 }
 
 .grid-inv {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(80px, 180px));
+    grid-template-columns: repeat(auto-fill, minmax(80px, 45%));
     justify-content: center;
     justify-items: center;
     align-content: space-around;
-    grid-gap: 10px;
-    padding: 10px;
+    grid-gap: 15px;
 }
 
 .grid-inv-item {
     background-color: hsl(0, 0%, 95%);
-    border: 2px solid hsl(0, 0%, 80%);
+    border: 1px solid hsl(0, 0%, 85%);
     border-radius: 5px;
     padding: 8px;
 }
 
 .detail01 {
-    font-size: 09px;
+    font-size: 07px;
     text-align: center;
     color: rgb(92, 92, 92);
+}
+
+#inventores {
+    background-color: #e7e7e7;
 }
 
 #inventor {
@@ -137,12 +204,12 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     overflow-wrap: break-word;
 }
 
 #inventor img {
-    max-width: 150px;
+    max-width: 80%;
     height: auto;
     padding: 10px;
 }
@@ -151,10 +218,11 @@ p {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: hsl(0, 0%, 95%);
-    max-width: 25vh;
-    padding: 20px;
+    background-color: hsla(0, 0%, 100%, 80%);
+    max-width: 30vh;
+    padding: 2%;
     border-radius: 20px;
+    width: 35vw;
 }
 
 #formulario {
@@ -208,6 +276,11 @@ form * {
     padding: 0.8em;
 }
 
+.form-item textarea {
+    min-width: 100%;
+    height: 200px;
+}
+
 #topics {
     display: flex;
     flex-wrap: wrap;
@@ -216,21 +289,47 @@ form * {
 footer {
     color: white;
     background-color: rgb(21, 103, 179);
-    height: 160px;
+    min-height: 220px;
+    font-family: "Barlow", sans-serif;
+    justify-content: space-between;
+    justify-items: center;
+    align-items:normal;
+    padding: 60px 60px 100px;
     display: flex;
-    font-size: 20px;
-    font-family: "Barlow", Sans-serif;
-    align-items: center;
-    padding: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+footer p {
+    font-size: 16px;
+    padding-bottom: 40px;
+    line-height: 200%;
+}
+
+.contact-icon {
+    filter: invert(100%);
+    max-width: 42px;
+    height: auto;
+    padding: 5px 10px;
+    position: relative;
+    top: 10px;
 }
 
 
-@media (min-width: 800px) {
+
+@media (min-width: 750px) {
+
 
 header {
-    font-size: 20px;
+    font-size: 18px;
     white-space: normal;
     flex-wrap: nowrap;
+    justify-content: center;
+}
+
+nav {
+    margin-left: auto;
+    position: static;
 }
 
 section {
@@ -245,7 +344,7 @@ h1 {
 h2 {
     font-size: 28px;
     padding: 20px;
-    margin: 30px;
+    margin: 20px;
 }
 
 h3 {
@@ -263,12 +362,12 @@ p {
 }
 
 #sobre .about p {
-    max-width: 800px;
+    max-width: 53%;
 }
 
-#sobre img {
-    max-width: 50vh;
-    height: auto;
+#sobre .about figure {
+  flex: 0 auto;
+  max-width: 38%;
 }
 
 .grid-inv {
@@ -284,13 +383,16 @@ p {
     padding: 20px;
 }
 
-#inventor img {
-    max-width: 400px;
-    height: auto;
+#inventor div {
+    max-width: 32vh;
 }
 
-#inventor div {
-    max-width: 38vh;
+footer {
+    flex-direction:row ;
+}
+
+footer p {
+    font-size: 20px;
 }
 
 }
